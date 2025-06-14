@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>minscan</title>
+    <title>vpscan</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 
     <style>
@@ -11,6 +11,8 @@
       .vb {
   height: 60px;
   font-weight:bold;
+        font-size:0.8em;
+        padding: 2px;
 }
 
     </style>
@@ -36,7 +38,7 @@ elementsArray.forEach(function(elem) {
   
   elem.addEventListener("click", (event) => {
     
-    let code = "VB-"+event.target.innerHTML;
+    let code = "VP-"+event.target.innerHTML;
     bp.style.display = 'none';
         back.style.display = 'block';
     JsBarcode("#barcode", code, {
@@ -54,10 +56,10 @@ elementsArray.forEach(function(elem) {
   <section class="section">
     <div class="container">
       <h1 class="title">
-        VB Codes
+        VP Codes
       </h1>
       <p class="subtitle">
-        Tool for generating <strong>VB Loading Codes</strong>!
+        Tool for generating <strong>VP Loading Codes</strong>!
       </p>
       <button class="button is-primary is-large" id="back" style="display:none;">Back</button><br />
       <div id="button-panel">
